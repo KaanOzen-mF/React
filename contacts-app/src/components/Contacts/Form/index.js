@@ -24,7 +24,7 @@ function Form({ addContact, contacts }) {
 		console.log(form);
 	};
 	return (
-		<div>
+		<div id="container">
 			<form onSubmit={onSubmit}>
 				<div>
 					<input
@@ -42,7 +42,7 @@ function Form({ addContact, contacts }) {
 						onChange={onChangeInput}
 					/>
 				</div>
-				<div>
+				<div className="btn">
 					<button>Add</button>
 				</div>
 			</form>
