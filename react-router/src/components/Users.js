@@ -3,8 +3,6 @@ import { useState, useEffect } from "react";
 
 import axios from "axios";
 
-import User from "./User";
-
 function Users() {
 	const [users, setUsers] = useState([]);
 
@@ -25,12 +23,8 @@ function Users() {
 				))}
 			</ul>
 			<h1>Please Select a User</h1>
-
-			<Routes>
-				<Route path="user" element={<User />}>
-					<Route path=":id" element={<User />} />
-				</Route>
-			</Routes>
+			<Outlet />
+			{/*Parent component has "Outlet" with this this component render all other components */}
 		</div>
 	);
 }

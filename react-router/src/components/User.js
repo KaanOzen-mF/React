@@ -1,5 +1,4 @@
-import { useParams, Link, Outlet, Route } from "react-router-dom";
-
+import { useParams, Link, Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import axios from "axios";
@@ -27,7 +26,6 @@ function User() {
 					Next User ({parseInt(id) + 1})
 				</Link>
 			</button>
-			<Outlet />
 		</div>
 	);
 }
